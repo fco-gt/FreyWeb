@@ -12,8 +12,9 @@ import {
   Switch,
 } from "@nextui-org/react";
 
-import { MoonIcon } from "./imgs/MoonIcon";
-import { SunIcon } from "./imgs/SunIcon";
+import { ThemeSwitch } from "./SwitchTheme";
+
+import { FreyLogo } from "./icons/FreyLogo.jsx";
 
 export function MainNavbar() {
   const menuItems = [
@@ -39,6 +40,7 @@ export function MainNavbar() {
 
       <NavbarContent className="sm:hidden pr-3" justify="center">
         <NavbarBrand>
+          <FreyLogo />
           <p className="font-bold text-inherit">Frey</p>
         </NavbarBrand>
       </NavbarContent>
@@ -66,13 +68,7 @@ export function MainNavbar() {
 
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
-          <Switch
-            defaultSelected
-            size="lg"
-            color="success"
-            startContent={<SunIcon />}
-            endContent={<MoonIcon />}
-          ></Switch>
+          <ThemeSwitch />
         </NavbarItem>
       </NavbarContent>
 
