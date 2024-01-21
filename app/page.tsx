@@ -25,7 +25,7 @@ export default function Home() {
 		</Link>
       </div>
 
-	  <div className="flex">
+	  <div className="flex md:hidden">
 		<Image width={500} alt="Frey Icon" src="https://i.imgur.com/WJeLfdR.png"/>
 	  </div>
     </section>
