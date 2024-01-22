@@ -33,7 +33,7 @@ export function MainNavbar() {
   ];
 
   return (
-    <Navbar disableAnimation isBordered>
+    <Navbar shouldHideOnScroll isBordered>
       <NavbarContent className="sm:hidden" justify="start">
         <NavbarMenuToggle />
       </NavbarContent>

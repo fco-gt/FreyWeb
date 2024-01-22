@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import {
   Button,
@@ -13,7 +13,7 @@ import { Image } from "@nextui-org/react";
 
 export default function Home() {
   return (
-    <>
+    <div>
       <section className="flex justify-between items-center p-0">
         <div className="flex-1">
           <h1 className={title()}>Bienvenido a </h1>
@@ -45,8 +45,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full grid grid-rows-1 grid-cols-1 sm:grid-cols-3 sm:gap-9 p-3 mt-5">
-        <Card className="mb-5" isPressable onPress={() => window.open("https://discord.gg/hijos-de-freyja-818547021777993748")}>
+      <section className="w-full grid grid-rows-1 grid-cols-1 sm:grid-cols-3 sm:gap-9 p-3 mt-5" id="games">
+        <Card
+          className="mb-5"
+          isPressable
+          onPress={() =>
+            window.open("https://discord.gg/hijos-de-freyja-818547021777993748")
+          }
+        >
           <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
             <p className="text-tiny uppercase font-bold">Hijos de Freyja</p>
             <small className="text-default-500">
@@ -63,7 +69,13 @@ export default function Home() {
             />
           </CardBody>
         </Card>
-        <Card className="mb-5" isPressable onPress={() => window.open("https://discord.gg/palia-hispana-950509049898762321")}>
+        <Card
+          className="mb-5"
+          isPressable
+          onPress={() =>
+            window.open("https://discord.gg/palia-hispana-950509049898762321")
+          }
+        >
           <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
             <p className="text-tiny uppercase font-bold">Palia Hispana</p>
             <small className="text-default-500">
@@ -80,7 +92,13 @@ export default function Home() {
             />
           </CardBody>
         </Card>
-        <Card className="mb-5" isPressable onPress={() => window.open("https://discord.gg/hijos-de-freyja-818547021777993748")}>
+        <Card
+          className="mb-5"
+          isPressable
+          onPress={() =>
+            window.open("https://discord.gg/hijos-de-freyja-818547021777993748")
+          }
+        >
           <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
             <p className="text-tiny uppercase font-bold">Enshrouded</p>
             <small className="text-default-500">
@@ -98,6 +116,6 @@ export default function Home() {
           </CardBody>
         </Card>
       </section>
-    </>
+    </div>
   );
 }
