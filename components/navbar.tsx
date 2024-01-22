@@ -12,7 +12,7 @@ import {
   Switch,
 } from "@nextui-org/react";
 
-import { ThemeSwitch } from "./SwitchTheme";
+import { ThemeSwitch } from "./ThemeSwitch";
 
 import { FreyLogo } from "./icons/FreyLogo.jsx";
 
@@ -41,13 +41,18 @@ export function MainNavbar() {
       <NavbarContent className="sm:hidden pr-3" justify="center">
         <NavbarBrand>
           <FreyLogo />
-          <p className="font-bold text-inherit">Frey</p>
+          <a className="font-bold text-inherit" href="/">
+            Frey
+          </a>
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarBrand>
-          <p className="font-bold text-inherit">Frey</p>
+          <FreyLogo />
+          <a className="font-bold text-inherit" href="/">
+            Frey
+          </a>
         </NavbarBrand>
         <NavbarItem>
           <Link color="foreground" href="#games">
@@ -67,7 +72,7 @@ export function MainNavbar() {
       </NavbarContent>
 
       <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
+        <NavbarItem className="flex">
           <ThemeSwitch />
         </NavbarItem>
       </NavbarContent>
