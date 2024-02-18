@@ -52,7 +52,7 @@ export default function RootLayout({
                 className="flex items-center gap-1 text-current"
                 title="Frey"
               >
-                <span className="text-default-500">© Todos los derechos reservados</span>
+                <span className="text-default-500">© Algunos derechos reservados</span>
                 <p className="text-primary">Frey</p>
               </Link>
             </footer>
